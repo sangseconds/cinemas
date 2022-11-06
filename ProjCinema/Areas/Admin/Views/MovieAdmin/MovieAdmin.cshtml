@@ -1,0 +1,145 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Phim";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<h5 class="ml-4 mt-4">QUẢN LÝ PHIM</h5>
+<div class="content-title-line card-phim ml-4"></div>
+<div class="phim-content d-flex row mx-2">
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-phim d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-phim"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số phim đang chiếu</div>
+                <div class="card-info">@ViewBag.dangchieu.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-phim d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-phim"><i class="fa fa-calendar-times-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số phim sắp chiếu</div>
+                <div class="card-info">@ViewBag.sapchieu.Count</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách phim</h5><a href="/Admin/MovieAdmin/AddMovieView" class="btn btn-add card-phim px-2 ml-3 mt-2"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-phim ml-4" style="margin-bottom: 2rem"></div>
+<div class="div-thead">
+    <table class="table table-hover tbhead">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 25%" scope="col">Tên phim</th>
+                <th style="width: 15%" scope="col">Đạo diễn</th>
+                <th style="width: 20%" scope="col">Diễn viên</th>
+                <th style="width: 15%" scope="col">Thời lượng/Thể loại</th>
+                <th style="width: 15%" scope="col">Tình trạng</th>
+                <th style="width: 15%" scope="col">Action&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="scroll">
+    <table class="table table-hover tbbody">
+        @foreach (var admin in ViewBag.phim)
+        {
+            <tr>
+                <th style="width: 20%">@admin.MovieName</th>
+                <th style="width: 12%">@admin.Director</th>
+                <th style="width: 28%">@admin.Actor</th>
+                <th style="width: 12%">@admin.MovieLength/@admin.Category</th>
+                @if (@admin.MovieStatus == 2)
+                {
+                    <th style="width: 12%">Đang chiếu</th>
+                }
+                else
+                {
+                    <th style="width: 12%">Sắp chiếu</th>
+                }
+                <th style="width: 12%"><a href="/Admin/MovieAdmin/EditMovieView?movieId=@admin.MovieID" class="btn btn-edit p-2 mr-3">Sửa</a><a href="/Admin/MovieAdmin/DeleteMovieAdmin?movieId=@admin.MovieID" class="btn btn-del p-2">Xóa</a></th>
+            </tr>
+        }
+    </table>
+</div>
+
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách các suất chiếu</h5>
+</div>
+<div class="content-title-line card-phim ml-4" style="margin-bottom: 2rem"></div>
+<div class="div-thead">
+    <table class="table table-hover tbhead">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 12%" scope="col">Mã suất chiếu</th>
+                <th style="width: 12%" scope="col">Giờ chiếu</th>
+                <th style="width: 30%" scope="col">Tên phim</th>
+                <th style="width: 10%" scope="col">Tên phòng</th>
+                <th style="width: 11%" scope="col">Tên rạp</th>
+                <th style="width: 12%" scope="col">Số ghế trống</th>
+                <th style="width: 15%" scope="col">Tình trạng</th>
+
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="scroll">
+    <table class="table table-hover tbbody">
+        <tr>
+            <th style="width: 12%">MVT00000001</th>
+            <th style="width: 12%">8:00</th>
+            <th style="width: 32%">ShangChi Và Huyền Thoại Thập Nhẫn</th>
+            <th style="width: 7%">2</th>
+            <th style="width: 15%">Universal Bà Triệu</th>
+            <th style="width: 10%">64</th>
+            <th style="width: 15%">Chưa tới</th>
+
+        </tr>
+        <tr>
+            <th>MVT00000001</th>
+            <th>8:00</th>
+            <th>ShangChi Và Huyền Thoại Thập Nhẫn</th>
+            <th>2</th>
+            <th>Universal Bà Triệu</th>
+            <th>64</th>
+            <th>Chưa tới</th>
+
+        </tr>
+        <tr>
+            <th>MVT00000001</th>
+            <th>8:00</th>
+            <th>ShangChi Và Huyền Thoại Thập Nhẫn</th>
+            <th>2</th>
+            <th>Universal Bà Triệu</th>
+            <th>64</th>
+            <th>Chưa tới</th>
+
+        </tr>
+        <tr>
+            <th>MVT00000001</th>
+            <th>8:00</th>
+            <th>ShangChi Và Huyền Thoại Thập Nhẫn</th>
+            <th>2</th>
+            <th>Universal Bà Triệu</th>
+            <th>64</th>
+            <th>Chưa tới</th>
+
+        </tr>
+        <tr>
+            <th>MVT00000001</th>
+            <th>8:00</th>
+            <th>ShangChi Và Huyền Thoại Thập Nhẫn</th>
+            <th>2</th>
+            <th>Universal Bà Triệu</th>
+            <th>64</th>
+            <th>Chưa tới</th>
+
+        </tr>
+    </table>
+</div>

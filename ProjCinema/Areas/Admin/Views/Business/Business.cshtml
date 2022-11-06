@@ -1,0 +1,168 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Kinh doanh";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">QUẢN LÝ KINH DOANH</h5>
+<div class="content-title-line card-kinhdoanh ml-4"></div>
+<div class="kinhdoanh-content d-flex row mx-2">
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-money" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Tổng doanh thu</div>
+                <div class="card-info">213.232.000 VNĐ</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Lượt thanh toán online</div>
+                <div class="card-info">@ViewBag.payment</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-ticket" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số loại vé</div>
+                <div class="card-info">@ViewBag.ticketType.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-beer" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số loại dịch vụ</div>
+                <div class="card-info">@ViewBag.service.Count</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách loại vé</h5><a href="/Admin/Business/AddTicketTypeView" class="btn-add card-icon-inside-kinhdoanh px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-kinhdoanh ml-4"></div>
+<table class="table table-hover" style="width: 90%; margin: 2rem auto;">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Mã loại vé</th>
+            <th scope="col">Tên loại vé</th>
+            <th scope="col">Giá tiền</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*<tr>
+                <th>LC01</th>
+                <th>TP. Hà Nội</th>
+                <th>Quản lý kinh doanh</th>
+                <th><button class="btn-edit p-2 mr-3">Sửa</button><button class="btn-del p-2">Xóa</button></th>
+            </tr>*@
+        @foreach (var admin in ViewBag.ticketType)
+        {
+            <tr>
+                <th>@admin.TicketTypeID</th>
+                <th>@admin.TicketTypeName</th>
+                <th>@admin.Price</th>
+                <th><a class="btn btn-edit p-2 mr-3" href="/Admin/Business/EditTicketTypeView?id=@admin.TicketTypeID">Sửa</a><a class="btn btn-del p-2 mr-3" href="/Admin/Business/DeleteTicketType?id=@admin.TicketTypeID">Xóa</a></th>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách dịch vụ</h5><a href="/Admin/Business/AddServiceView" class="btn-add card-icon-inside-kinhdoanh px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-kinhdoanh ml-4"></div>
+<table class="table table-hover" style="width: 90%; margin: 2rem auto;">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Mã dịch vụ</th>
+            <th scope="col">Tên dịch vụ</th>
+            <th scope="col">Giá tiền</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var admin in ViewBag.service)
+        {
+            <tr>
+                <th>@admin.ServiceID</th>
+                <th>@admin.ServiceName</th>
+                <th>@admin.ServicePrice</th>
+                <th><a class="btn btn-edit p-2 mr-3" href="/Admin/Business/EditServiceView?id=@admin.ServiceID">Sửa</a><a class="btn btn-del p-2 mr-3" href="/Admin/Business/DeleteService?id=@admin.ServiceID">Xóa</a></th>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Mã hóa đơn</h5><button class="btn-add card-kinhdoanh px-2 ml-3 mt-2"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</button>
+</div>
+<div class="content-title-line card-kinhdoanh ml-4"></div>
+<div class="div-thead">
+    <table class="table table-hover tbhead">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 20%" scope="col">Mã hóa đơn</th>
+                <th style="width: 20%" scope="col">Mã khách hàng</th>
+                <th style="width: 20%" scope="col">TicketSession</th>
+                <th style="width: 20%" scope="col">ServiceSession</th>
+                <th style="width: 20%" scope="col">Ngày trả</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="scroll">
+    <table class="table table-hover tbbody">
+        @foreach (var admin in ViewBag.bill)
+        {
+            <tr>
+                <th style="width: 20%">@admin.BillID</th>
+                <th style="width: 20%">@admin.UserID</th>
+                <th style="width: 20%">@admin.TicketSession</th>
+                <th style="width: 20%">@admin.ServiceSession</th>
+                <th style="width: 20%">@admin.PayDay</th>
+            </tr>
+        }
+    </table>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách mã giảm giá</h5><a href="/Admin/Business/AddDiscountView" class="btn-add card-icon-inside-kinhdoanh px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-kinhdoanh ml-4"></div>
+<div class="table-fixed-head">
+    <table class="table table-hover" style="width: 90%; margin: 2rem auto;">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Mã giảm giá</th>
+                <th scope="col">Lượng giảm</th>
+                <th scope="col">Tình trạng</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var admin in ViewBag.discount)
+            {
+                <tr>
+                    <th>@admin.CodeID</th>
+                    <th>@admin.DiscountNumber</th>
+                    <th>@admin.State</th>
+                    <th><a class="btn btn-edit p-2 mr-3" href="/Admin/Business/EditDiscountView?id=@admin.CodeID">Sửa</a><a class="btn btn-del p-2 mr-3" href="/Admin/Business/DeleteDiscount?id=@admin.CodeID">Xóa</a></th>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

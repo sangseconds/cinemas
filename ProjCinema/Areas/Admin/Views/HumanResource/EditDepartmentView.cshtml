@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Universal Quản lý | Nhân sự";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">SỬA DEPARTMENT</h5>
+<div class="content-title-line card-nhansu ml-4"></div>
+<div class="container">
+    <div class="modal-body">
+        <form action="/Admin/HumanResource/EditDepartment?departmentId=@ViewBag.departmentId" method="post" class="d-flex justify-content-center flex-column needs-validation" novalidate>
+            <div class="row form-group">
+                <label class="col-4" for="admin-account">Tên bộ phận</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="department-account" name="department-name" value="@ViewBag.department.DepartmentName" />
+                </div>
+            </div>
+            @*<div class="row form-group">
+                    <label class="col-4">Bộ phận</label>
+                    <div class="col-8 d-flex flex-column">
+                        @{ var i = 1; }
+                        @foreach (var department in ViewBag.departments)
+                        {
+                            var inputId = "admin-role" + i;
+                            if (i == ViewBag.admin.DepartmentID)
+                            {
+                                <div class="row justify-content-start">
+                                    <input type="radio" id="@inputId" name="role" value="@department.DepartmentID" checked="checked" required />
+                                    <label for="@inputId">@department.DepartmentName</label>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row justify-content-start">
+                                    <input type="radio" id="@inputId" name="role" value="@department.DepartmentID" required />
+                                    <label for="@inputId">@department.DepartmentName</label>
+                                </div>
+                            }
+                            i += 1;
+                        }
+                    </div>
+                </div>*@
+            <div class="row justify-content-end">
+                <button type="submit" class="btn btn-lg card-nhansu text-light mr-3">Lưu</button>
+                <a href="/Admin/HumanResource/HumanResource" type="button" class="btn btn-lg btn-light mr-3">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+

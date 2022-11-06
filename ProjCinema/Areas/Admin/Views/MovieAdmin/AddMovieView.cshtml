@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Universal Quản lý | Phim";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">THÊM PHIM MỚI</h5>
+<div class="content-title-line card-nhansu ml-4"></div>
+<div class="container">
+    <div class="modal-body">
+        <form action="/Admin/MovieAdmin/AddMovieAdmin" method="post" class="d-flex justify-content-center flex-column needs-validation" novalidate>
+            <div class="row form-group">
+                <label class="col-4" for="movie-name">Tên phim</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="movie-name" name="movie-name" required />
+
+                    <div class="invalid-feedback">Hãy điền tên phim</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="movie-director">Tên đạo diễn</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="movie-director" name="movie-director" required />
+                    <div class="invalid-feedback">Hãy điền tên đạo diễn</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="movie-actor">Tên diễn viên</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="movie-actor" name="movie-actor" required />
+                    <div class="invalid-feedback">Hãy điền tên diễn viên</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="movie-nation">Quốc gia</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="movie-nation" name="movie-nation" required />
+                    <div class="invalid-feedback">Hãy điền quốc gia</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="movie-category">Thể loại</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="movie-category" name="movie-category" required />
+                    <div class="invalid-feedback">Hãy điền quốc gia</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="movie-length">Thời lượng</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="number" id="movie-length" name="movie-length" required />
+                    <div class="invalid-feedback">Hãy điền thời lượng</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-4" for="movie-status">Tình trạng</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="movie-status" name="movie-status" required />
+                    <div class="invalid-feedback">Hãy điền tình trạng của phim</div>
+                </div>
+            </div>
+
+            <div class="row justify-content-end">
+                <button type="submit" class="btn btn-lg card-nhansu text-light mr-3">Lưu</button>
+                <a href="" type="button" class="btn btn-lg btn-light mr-3">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>

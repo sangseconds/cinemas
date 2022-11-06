@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Cơ sở hạ tầng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">THÊM PHÒNG</h5>
+<div class="content-title-line card-coso ml-4"></div>
+<div class="container">
+    <div class="modal-body">
+        <form action="/Admin/Facility/AddRoom" method="post" class="d-flex justify-content-center flex-column needs-validation" novalidate>
+            <div class="row form-group">
+                <label class="col-4" for="room-name">Tên phòng</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="room-name" name="room-name" required />
+                    <div class="invalid-feedback">Hãy điền tên phòng</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="cinema-id" class="col-4">Chọn rạp</label>
+                <div class="col-8 p-0 d-flex flex-column">
+                    <select class="select-box" id="cinema-id" name="cinema-id">
+                        @{ var i = 1; }
+                        @foreach (var cinema in ViewBag.cinemas)
+                        {
+                            if (i == 1)
+                            {
+                                <option value="@cinema.CinemaID" selected="selected">@cinema.CinemaName</option>
+                            }
+                            else
+                            {
+                                <option value="@cinema.CinemaID">@cinema.CinemaName</option>
+                            }
+                            i++;
+                        }
+                    </select>
+                    <div class="invalid-feedback">Hãy chọn một khu vực</div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="room-screentype">Loại màn hình</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="room-screentype" name="room-screentype" required />
+                    <div class="invalid-feedback">Hãy điền loại màn hình</div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <button type="submit" class="btn btn-lg card-coso text-light mr-3">Lưu</button>
+                <a href="/Admin/Facility/Facility" type="button" class="btn btn-lg btn-light mr-3">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>

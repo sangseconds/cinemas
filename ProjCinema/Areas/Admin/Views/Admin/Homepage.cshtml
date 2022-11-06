@@ -1,0 +1,191 @@
+﻿
+@{
+    ViewBag.Title = "Universal Quản lý | Trang chủ";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">QUẢN LÝ NHÂN SỰ</h5>
+<div class="content-title-line card-nhansu ml-4"></div>
+<div class="nhansu-content d-flex row mx-2">
+    <a href="/Admin/HumanResource/HumanResource" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-nhansu d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-nhansu"><i class="fa fa-user" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số quản trị viên</div>
+                <div class="card-info">@ViewBag.admins.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/HumanResource/HumanResource" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-nhansu d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-nhansu"><i class="fa fa-users" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bộ phận công tác</div>
+                <div class="card-info">@ViewBag.departments.Count</div>
+            </div>
+        </div>
+    </a>
+</div>
+<h5 class="ml-4 mt-4">QUẢN LÝ CƠ SỞ HẠ TẦNG</h5>
+<div class="content-title-line card-coso ml-4"></div>
+<div class="coso-content d-flex row mx-2">
+    <a href="/Admin/Facility/Facility" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-coso d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-coso"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số khu vực rạp</div>
+                <div class="card-info">@ViewBag.locations.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/Facility/Facility" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-coso d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-coso"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số rạp chiếu phim</div>
+                <div class="card-info">@ViewBag.cinemas.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/Facility/Facility" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-coso d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-coso"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số phòng chiếu phim</div>
+                <div class="card-info">@ViewBag.rooms.Count</div>
+            </div>
+        </div>
+    </a>
+</div>
+<h5 class="ml-4 mt-4">QUẢN LÝ KINH DOANH</h5>
+<div class="content-title-line card-kinhdoanh ml-4"></div>
+<div class="coso-content d-flex row mx-2">
+    <a href="/Admin/Business/Business" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-money" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Tổng doanh thu</div>
+                <div class="card-info">213.232.000 VNĐ</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/Business/Business" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Lượt thanh toán online</div>
+                <div class="card-info">@ViewBag.payment</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/Business/Business" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-ticket" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số loại vé</div>
+                <div class="card-info">@ViewBag.ticketType.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/Business/Business" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-kinhdoanh d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-kinhdoanh"><i class="fa fa-beer" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số loại dịch vụ</div>
+                <div class="card-info">@ViewBag.service.Count</div>
+            </div>
+        </div>
+    </a>
+</div>
+<h5 class="ml-4 mt-4">QUẢN LÝ PHIM</h5>
+<div class="content-title-line card-phim ml-4"></div>
+<div class="coso-content d-flex row mx-2">
+    <a href="/Admin/MovieAdmin/MovieAdmin" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-phim d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-phim"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số phim đang chiếu</div>
+                <div class="card-info">@ViewBag.dangchieu.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/MovieAdmin/MovieAdmin" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-phim d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-phim"><i class="fa fa-calendar-times-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số phim sắp chiếu</div>
+                <div class="card-info">@ViewBag.sapchieu.Count</div>
+            </div>
+        </div>
+    </a>
+</div>
+<h5 class="ml-4 mt-4">QUẢN LÝ TRUYỀN THÔNG</h5>
+<div class="content-title-line card-truyenthong ml-4"></div>
+<div class="coso-content d-flex row mx-2">
+    <a href="/Admin/Media/Media" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài đăng</div>
+                <div class="card-info">@ViewBag.sobaidang.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="/Admin/Media/Media" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài Blog điện ảnh</div>
+                <div class="card-info">@ViewBag.soblog.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài Bình luận phim</div>
+                <div class="card-info">@ViewBag.sobaibl.Count</div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài Tin khuyến mãi</div>
+                <div class="card-info">@ViewBag.sobaibl.Count</div>
+            </div>
+        </div>
+    </a>
+</div>

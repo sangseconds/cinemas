@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/Admin.css">
+</head>
+<body>
+    <div id="side-menu">
+        <div class="nav-brand my-3">
+            <h1 style="color: #2b6ec7">Universal</h1>
+            <h3>Cinema</h3>
+        </div>
+        <div class="nav-vertical d-flex">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <button class="nav-button"><a href="/Admin/Admin/Homepage" class="nav-link"><span class="d-flex align-center"><i class="fa fa-home mr-3" aria-hidden="true"></i><p class="m-0">Trang chủ</p></span></a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button"><a href="/Admin/HumanResource/HumanResource" class="nav-link"><span class="d-flex align-center"><i class="fa fa-users mr-3" aria-hidden="true"></i><p class="m-0">Quản lý nhân sự</p></span></a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button"><a href="/Admin/Facility/Facility" class="nav-link"><span class="d-flex align-center"><i class="fa fa-building-o mr-3" aria-hidden="true"></i><p class="m-0">Quản lý cơ sở hạ tầng</p></span></a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button"><a href="/Admin/Business/Business" class="nav-link"><span class="d-flex align-center"><i class="fa fa-money mr-3" aria-hidden="true"></i><p class="m-0">Quản lý kinh doanh</p></span></a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button"><a href="/Admin/MovieAdmin/MovieAdmin" class="nav-link"><span class="d-flex align-center"><i class="fa fa-film mr-3" aria-hidden="true"></i><p class="m-0">Quản lý phim</p></span></a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button"><a href="/Admin/Media/Media" class="nav-link"><span class="d-flex align-center"><i class="fa fa-comments-o mr-3" aria-hidden="true"></i><p class="m-0">Quản lý truyền thông</p></span></a></button>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Universal <i class="fa fa-copyright" aria-hidden="true"></i> 2022</p>
+        </div>
+    </div>
+    <div id="right-side-wrapper">
+        <header class="d-flex flex-row justify-content-between">
+            <div class="header-path">
+                <a href="/Admin/Homepage/Homepage"><i class="fa fa-home mr-2 ml-4" aria-hidden="true"></i>Trang chủ</a>
+            </div>
+            <div class="header-nav d-flex flex-row">
+                <p class="mr-4">Xin chào, <span style="font-weight: bold; color: #2b6ec7">admin</span></p>
+                <button class="header-button"><i class="fa fa-user" aria-hidden="true"></i></button>
+                <a href="/Admin/Login" class="btn header-button"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </div>
+        </header>
+        <div class="content">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

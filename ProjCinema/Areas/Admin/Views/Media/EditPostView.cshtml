@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Truyền thông";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">SỬA BÀI ĐĂNG</h5>
+<div class="content-title-line card-truyenthong ml-4"></div>
+<div class="container">
+    <div class="modal-body">
+        <form action="/Admin/Media/EditPost?postId=@ViewBag.postId" method="post" class="d-flex justify-content-center flex-column needs-validation" novalidate>
+            <div class="row form-group">
+                <label class="col-4" for="post-name">Tên bài đăng</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="post-name" name="post-name" value="@ViewBag.post.PostTitle" required />
+                    <div class="invalid-feedback">Hãy điền tên bài đăng</div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="post-category">Thể loại</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="post-category" name="post-category" value="@ViewBag.post.PostCategory" required />
+                    <div class="invalid-feedback">Hãy điền thể loại bài đăng</div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4">Chọn người đăng</label>
+                @{ var i = 1; }
+                <select class="select-box" id="admin-id" name="admin-id">
+                    @foreach (var admin in ViewBag.admins)
+                    {
+                        if (admin.AdminID == ViewBag.post.AdminID)
+                        {
+                            <option value="@admin.AdminID" selected="selected">@admin.AdminName</option>
+                        }
+                        else
+                        {
+                            <option value="@admin.AdminID">@admin.AdminName</option>
+                        }
+                        i++;
+                    }
+                </select>
+            </div>
+            <div class="row justify-content-end">
+                <button type="button" onclick="editPost()" class="btn btn-lg card-truyenthong text-light mr-3">Lưu</button>
+                <a href="/Admin/Media/Media" type="button" class="btn btn-lg btn-light mr-3">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    const editPost = () => {
+        const name = document.getElementById("post-name").value
+        const category = document.getElementById("post-category").value
+        console.log(name)
+        $.ajax({
+            type: "POST",
+            data: {
+                PostTitle: name,
+                PostCategory: category
+            },
+            url: "/Media/EditPost",
+            success: (data) => {
+                alert(data)
+            },
+            error: () => {
+                alert("Thêm mới thành công")
+            }
+        }).done();
+    }
+</script>

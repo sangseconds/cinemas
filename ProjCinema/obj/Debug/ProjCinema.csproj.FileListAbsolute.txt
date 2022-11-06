@@ -1,0 +1,245 @@
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\ProjCinema.dll.config
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\ProjCinema.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\ProjCinema.pdb
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\csc.exe
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\csc.exe.config
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\csc.rsp
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\csi.exe
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\csi.exe.config
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\csi.rsp
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.AppContext.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Console.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.IO.Compression.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Net.Http.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.ValueTuple.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\vbc.exe
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\vbc.exe.config
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\vbc.rsp
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\VBCSCompiler.exe
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\Antlr3.Runtime.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\Newtonsoft.Json.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Helpers.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Mvc.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Optimization.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Razor.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.WebPages.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.WebPages.Razor.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\WebGrease.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Helpers.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Mvc.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Optimization.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.Razor.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.WebPages.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\System.Web.WebPages.Razor.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\Newtonsoft.Json.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\Antlr3.Runtime.pdb
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.CopyComplete
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\obj\Debug\ProjCinema.dll
+C:\Users\ADMIN\source\repos\ProjCinema\ProjCinema\obj\Debug\ProjCinema.pdb
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.AssemblyReference.cache
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.CoreCompileInputs.cache
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\obj\Debug\ProjCinema.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\obj\Debug\ProjCinema.pdb
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\ProjCinema.dll.config
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\ProjCinema.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\ProjCinema.pdb
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\csc.exe
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\csc.exe.config
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\csc.rsp
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\csi.exe
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\csi.exe.config
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\csi.rsp
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.AppContext.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Collections.Immutable.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Console.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Globalization.Calendars.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.IO.Compression.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.IO.FileSystem.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Net.Http.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Net.Sockets.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Reflection.Metadata.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.ValueTuple.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XPath.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\vbc.exe
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\vbc.exe.config
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\vbc.rsp
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\VBCSCompiler.exe
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\roslyn\VBCSCompiler.exe.config
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\Antlr3.Runtime.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\EntityFramework.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\EntityFramework.SqlServer.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\Microsoft.Web.Infrastructure.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\Newtonsoft.Json.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Helpers.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Mvc.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Optimization.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Razor.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.WebPages.Deployment.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.WebPages.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.WebPages.Razor.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\WebGrease.dll
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\EntityFramework.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\EntityFramework.SqlServer.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Helpers.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Mvc.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Optimization.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.Razor.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.WebPages.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.WebPages.Deployment.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\System.Web.WebPages.Razor.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\Newtonsoft.Json.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\Antlr3.Runtime.pdb
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HK4.1\HKI_N4\Web Engine\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.CopyComplete
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\ProjCinema.dll.config
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\ProjCinema.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\ProjCinema.pdb
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\csc.exe.config
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\csc.rsp
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\csi.exe
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\csi.exe.config
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\csi.rsp
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Console.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\vbc.rsp
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\WebGrease.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\obj\Debug\ProjCinema.csproj.CopyComplete
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\obj\Debug\ProjCinema.dll
+C:\Users\Admin\Desktop\ProjCinema\ProjCinema\obj\Debug\ProjCinema.pdb

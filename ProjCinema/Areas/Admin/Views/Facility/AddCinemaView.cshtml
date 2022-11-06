@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Cơ sở hạ tầng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">THÊM RẠP</h5>
+<div class="content-title-line card-coso ml-4"></div>
+<div class="container">
+    <div class="modal-body">
+        <form action="/Admin/Facility/AddCinema" method="post" class="d-flex justify-content-center flex-column needs-validation" novalidate>
+            <div class="row form-group">
+                <label class="col-4" for="cinema-name">Tên rạp</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="cinema-name" name="cinema-name" required />
+                    <div class="invalid-feedback">Hãy điền tên rạp</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4">Khu vực</label>
+                <div class="col-8 d-flex flex-column">
+                    @{ var i = 1; }
+                    @foreach (var location in ViewBag.locations)
+                    {
+                        var inputId = "location-id" + i;
+                        <div class="row justify-content-start">
+                            <input type="radio" id="@inputId" name="location-id" value="@location.LocationID" required />
+                            <label for="@inputId">@location.LocationName</label>
+                        </div>
+                        i += 1;
+                    }
+                    <div class="invalid-feedback">Hãy chọn một khu vực</div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="cinema-address">Địa chỉ</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="cinema-address" name="cinema-address" required />
+                    <div class="invalid-feedback">Hãy điền địa chỉ rạp</div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="cinema-number">Số điện thoại</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="cinema-number" name="cinema-number" required />
+                    <div class="invalid-feedback">Hãy điền số điện thoại</div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <button type="submit" class="btn btn-lg card-coso text-light mr-3">Lưu</button>
+                <a href="/Admin/Facility/Facility" type="button" class="btn btn-lg btn-light mr-3">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>

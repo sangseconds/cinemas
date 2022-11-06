@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Cơ sở hạ tầng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<h5 class="ml-4 mt-4">QUẢN LÝ CƠ SỞ HẠ TẦNG</h5>
+<div class="content-title-line card-coso ml-4"></div>
+<div class="coso-content d-flex row mx-2">
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-coso d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-coso"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số khu vực rạp</div>
+                <div class="card-info">@ViewBag.locations.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-coso d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-coso"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số rạp chiếu phim</div>
+                <div class="card-info">@ViewBag.cinemas.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-coso d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-coso"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số phòng chiếu phim</div>
+                <div class="card-info">@ViewBag.rooms.Count</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách khu vực</h5><a href="/Admin/Facility/AddLocationView" class="btn-add card-coso px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-coso ml-4"></div>
+<div class="div-thead">
+    <table class="table table-hover tbhead">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 19%" scope="col">Mã khu vực</th>
+                <th style="width: 26%" scope="col">Tên khu vực</th>
+                <th style="width: 30%" scope="col">Số rạp</th>
+                <th style="width: 25%" scope="col">Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="scroll">
+    <table class="table table-hover tbbody">
+        @foreach (var location in ViewBag.locations)
+        {
+            <tr>
+                <th style="width: 21%">@location.LocationID</th>
+                <th style="width: 25%">@location.LocationName</th>
+                @{var cinemaCount = 0;}
+                @foreach (var cinema in ViewBag.cinemas)
+                {
+                    if (cinema.LocationID == location.LocationID)
+                    {
+                        cinemaCount++;
+                    }
+                }
+                <th style="width: 30%">@cinemaCount</th>
+                <th style="width: 24%"><a href="/Admin/Facility/EditLocationView?locationId=@location.LocationID" class="btn-edit p-2 mr-3">Sửa</a><a href="/Admin/Facility/DeleteLocation?locationId=@location.LocationID" class="btn-del p-2">Xóa</a></th>
+            </tr>
+        }
+    </table>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách rạp</h5><a href="/Admin/Facility/AddCinemaView" class="btn-add card-coso px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-coso ml-4"></div>
+<div class="div-thead">
+    <table class="table table-hover tbhead">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 15%" scope="col">Mã rạp</th>
+                <th style="width: 15%" scope="col">Tên rạp</th>
+                <th style="width: 15%" scope="col">Khu vực</th>
+                <th style="width: 15%" scope="col">Địa chỉ</th>
+                <th style="width: 15%" scope="col">SĐT</th>
+                <th style="width: 10%" scope="col">Số phòng</th>
+                <th style="width: 15%" scope="col">Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="scroll">
+    <table class="table table-hover tbbody">
+        @foreach (var cinema in ViewBag.cinemas)
+        {
+            <tr>
+                <th style="width: 15%">@cinema.CinemaID</th>
+                <th style="width: 15%">@cinema.CinemaName</th>
+                <th style="width: 15%">@cinema.LocationName</th>
+                <th style="width: 15%">@cinema.CinemaAddress</th>
+                <th style="width: 15%">@cinema.PhoneNumber</th>
+                @{var roomCount = 0;}
+                @foreach (var room in ViewBag.rooms)
+                {
+                    if (cinema.CinemaID == room.CinemaID)
+                    {
+                        roomCount++;
+                    }
+                }
+                <th style="width: 10%">@roomCount</th>
+                <th style="width: 15%"><a href="/Admin/Facility/EditCinemaView?cinemaId=@cinema.CinemaID" class="btn-edit p-2 mr-3">Sửa</a><a href="/Admin/Facility/DeleteCinema?cinemaId=@cinema.CinemaID" class="btn-del p-2">Xóa</a></th>
+            </tr>
+        }
+    </table>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách phòng chiếu</h5><a href="/Admin/Facility/AddRoomView" class="btn-add card-coso px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-coso ml-4"></div>
+<div class="div-thead">
+    <table class="table table-hover tbhead">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 20%" scope="col">Mã phòng</th>
+                <th style="width: 20%" scope="col">Tên phòng</th>
+                <th style="width: 20%" scope="col">Tên rạp</th>
+                <th style="width: 20%" scope="col">Loại màn hình</th>
+                <th style="width: 20%" scope="col">Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="scroll">
+    <table class="table table-hover tbbody">
+        @foreach (var room in ViewBag.rooms)
+        {
+            <tr>
+                <th style="width: 20%">@room.RoomID</th>
+                <th style="width: 20%">@room.RoomName</th>
+                <th style="width: 20%">@room.CinemaName</th>
+                <th style="width: 20%">@room.ScreenType</th>
+                <th style="width: 20%"><a href="/Admin/Facility/EditRoomView?roomId=@room.RoomID" class="btn-edit p-2 mr-3">Sửa</a><a href="/Admin/Facility/DeleteRoom?roomId=@room.RoomID" class="btn-del p-2">Xóa</a></th>
+            </tr>
+        }
+    </table>
+</div>

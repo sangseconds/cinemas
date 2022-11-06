@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Truyền thông";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<h5 class="ml-4 mt-4">QUẢN LÝ TRUYỀN THÔNG</h5>
+<div class="content-title-line card-truyenthong ml-4"></div>
+<div class="truyenthong-content d-flex row mx-2">
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài đăng</div>
+                <div class="card-info">@ViewBag.sobaidang.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài Blog điện ảnh</div>
+                <div class="card-info">@ViewBag.soblog.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài Bình luận phim</div>
+                <div class="card-info">@ViewBag.sobaibl.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-truyenthong d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-truyenthong"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bài Tin khuyến mãi</div>
+                <div class="card-info">@ViewBag.sobaitin.Count</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách bài đăng</h5><a href="/Admin/Media/AddPostView" class="btn-add card-truyenthong px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-truyenthong ml-4"></div>
+
+<div class="div-thead">
+    <table class="table table-hover tbhead">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 10%" scope="col">Mã bài đăng</th>
+                <th style="width: 25%" scope="col">Tên bài đăng</th>
+                <th style="width: 15%" scope="col">Thể loại</th>
+                <th style="width: 20%" scope="col">Ngày đăng</th>
+                <th style="width: 15%" scope="col">Người đăng</th>
+                <th style="width: 15%" scope="col">Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="scroll">
+    <table class="table table-hover tbbody">
+        @foreach (var post in ViewBag.sobaidang)
+        {
+            <tr>
+                <th style="width: 10%">@post.PostID</th>
+                <th style="width: 25%">@post.PostTitle</th>
+                <th style="width: 15%">@post.PostCategory</th>
+                <th style="width: 20%">@post.CreateAt</th>
+                <th style="width: 15%">@post.AdminID</th>
+                <th style="width: 15%"><a href="/Admin/Media/EditPostView?postId=@post.PostID" class="btn-edit p-2 mr-3">Sửa</a><a href="/Admin/Media/DeletePost?postId=@post.PostID" class="btn-del p-2">Xóa</a></th>
+            </tr>
+        }
+    </table>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách phản hồi</h5>
+</div>
+<div class="content-title-line card-truyenthong ml-4"></div>
+<table class="table table-hover" style="width: 90%; margin: 2rem auto;">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Mã phản hồi</th>
+            <th scope="col">Nội dung</th>
+            <th scope="col">Email người dùng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var feedback in ViewBag.phanhoi)
+        {
+            <tr>
+                <th>@feedback.FeedbackID</th>
+                <th>@feedback.email</th>
+                <th>@feedback.FeedbackContent</th>
+            </tr>
+        }
+    </tbody>
+</table>

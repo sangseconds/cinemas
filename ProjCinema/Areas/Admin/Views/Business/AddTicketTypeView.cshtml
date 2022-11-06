@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Universal Quản lý | Kinh doanh";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5 class="ml-4 mt-4">THÊM ADMIN</h5>
+<div class="content-title-line card-nhansu ml-4"></div>
+<div class="container">
+    <div class="modal-body">
+        <form action="/Admin/Business/AddTicketType" method="post" class="d-flex justify-content-center flex-column needs-validation" novalidate>
+            <div class="row form-group">
+                <label class="col-4" for="ticket_type1">Mã loại vé</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="ticket_type1" name="ticket_type1" required />
+                    <div class="invalid-feedback">Hãy điền mã loại vé</div>
+                    @if (ViewBag.error != null)
+                    {<div class="text-danger">@ViewBag.error</div>}
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="tickettype_name">Tên loại vé</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="tickettype_name" name="tickettype_name" required />
+                    <div class="invalid-feedback">Hãy điền mật khẩu</div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-4" for="tickettype_name">Giá</label>
+                <div class="d-flex flex-column col-8 p-0">
+                    <input class="p-2" type="text" id="tickettype_price" name="tickettype_price" required />
+                    <div class="invalid-feedback">Hãy điền giá vé</div>
+                </div>
+            </div>
+            @*<div class="row form-group">
+                    <label class="col-4">Bộ phận</label>
+                    <div class="col-8 d-flex flex-column">
+                        @{ var i = 1; }
+                        @foreach (var department in ViewBag.departments)
+                        {
+                            var inputId = "admin-role" + i;
+                            <div class="row justify-content-start">
+                                <input type="radio" id="@inputId" name="role" value="@department.DepartmentID" required />
+                                <label for="@inputId">@department.DepartmentName</label>
+                            </div>
+                            i += 1;
+                        }
+                        <div class="invalid-feedback">Hãy chọn một bộ phận</div>
+                    </div>
+                </div>*@
+            <div class="row justify-content-end">
+                <button type="submit" class="btn btn-lg card-kinhdoanh text-light mr-3">Lưu</button>
+                <a href="/Admin/Business/Business" type="button" class="btn btn-lg btn-light mr-3">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>

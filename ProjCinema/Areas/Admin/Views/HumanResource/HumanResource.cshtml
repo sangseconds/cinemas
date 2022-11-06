@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Universal Quản lý | Nhân sự";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<h5 class="ml-4 mt-4">QUẢN LÝ NHÂN SỰ</h5>
+<div class="content-title-line card-nhansu ml-4"></div>
+<div class="nhansu-content d-flex row mx-2">
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-nhansu d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-nhansu"><i class="fa fa-user" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số quản trị viên</div>
+                <div class="card-info">@ViewBag.admins.Count</div>
+            </div>
+        </div>
+    </div>
+    <div class="card-content col-xl-3 col-md-6 p-4">
+        <div class="card-div card-nhansu d-flex p-4">
+            <div class="card-icon">
+                <div class="card-icon-inside card-icon-inside-nhansu"><i class="fa fa-users" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Số bộ phận công tác</div>
+                <div class="card-info">@ViewBag.departments.Count</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách quản trị viên</h5><a href="/Admin/HumanResource/AddAdminView" class="btn-add card-icon-inside-nhansu px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-nhansu ml-4"></div>
+<table class="table table-hover" style="width: 90%; margin: 2rem auto;">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Mã admin</th>
+            <th scope="col">Tài khoản admin</th>
+            <th scope="col">Bộ phận công tác</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var admin in ViewBag.admins)
+        {
+            <tr>
+                <th>@admin.AdminID</th>
+                <th>@admin.AdminName</th>
+                <th>@admin.DepartmentName</th>
+                <th><a href="/Admin/HumanResource/EditAdminView?adminId=@admin.AdminID" class="btn btn-edit p-2 mr-3">Sửa</a><a href="/Admin/HumanResource/DeleteAdmin?adminId=@admin.AdminID" class="btn btn-del p-2">Xóa</a></th>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row m-0 p-0">
+    <h5 class="ml-4 mt-4">Danh sách bộ phận công tác</h5><a href="/Admin/HumanResource/AddDepartmentView" class="btn-add card-icon-inside-nhansu px-2 ml-3 mt-4" style="line-height: 40px;"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Thêm</a>
+</div>
+<div class="content-title-line card-nhansu ml-4"></div>
+<table class="table table-hover" style="width: 90%; margin: 2rem auto;">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Mã bộ phận</th>
+            <th scope="col">Bộ phận công tác</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var department in ViewBag.departments)
+        {
+            <tr>
+                <th>@department.DepartmentID</th>
+                <th>@department.DepartmentName</th>
+                <th><a class="btn btn-edit p-2 mr-3" href="/Admin/HumanResource/EditDepartmentView?departmentId=@department.DepartmentID">Sửa</a><a class="btn btn-del p-2" href="/Admin/HumanResource/DeleteDepartment?departmentId=@department.DepartmentID">Xóa</a></th>
+            </tr>
+        }
+    </tbody>
+</table>
